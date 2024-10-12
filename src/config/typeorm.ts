@@ -14,7 +14,7 @@ const config = {
   password: `${process.env.DATABASE_PASSWORD}`,
   database: `${process.env.DATABASE_NAME}`,
    ssl: {
-          ca: `${process.env.DATABASE_CA}`,
+          ca: `${process.env.DATABASE_CA_CERT}`,
      },
   entities: [
     isProduction
