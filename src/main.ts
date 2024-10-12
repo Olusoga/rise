@@ -22,8 +22,8 @@ async function bootstrap() {
   
 
   const options = new DocumentBuilder()
-  .setTitle('Aipplier APIS')
-  .setDescription('Aipplier help job seekers to apply for role authomatically')
+  .setTitle('RISE_TEST APIS')
+  .setDescription('Rise Bachend assessment')
   .setVersion('1.0')
   .build();
 
