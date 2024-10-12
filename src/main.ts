@@ -28,7 +28,7 @@ async function bootstrap() {
   .build();
 
 const swaggerDocument = SwaggerModule.createDocument(app, options);
-SwaggerModule.setup('/aipplier', app, swaggerDocument, {
+SwaggerModule.setup('/rise', app, swaggerDocument, {
   customCss:
   '.swagger-ui .opblock .opblock-summary-path-description-wrapper { align-items: center; display: flex; flex-wrap: wrap; gap: 0 10px; padding: 0 10px; width: 100%; }',
 customCssUrl:
