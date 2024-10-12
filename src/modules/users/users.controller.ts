@@ -1,10 +1,9 @@
-import { Controller, Get, Post, Body, Patch, Delete, Param, HttpStatus } from '@nestjs/common';
-import { ApiOperation, ApiResponse, ApiTags, ApiParam } from '@nestjs/swagger';
+import { Controller, Get  } from '@nestjs/common';
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { UsersService } from './users.service';
-import { CreateUserDto } from './dto/create-user.dto';
 import { UserDto } from './dto/user.dto';
 
-@ApiTags('users') // Grouping these endpoints under 'users' in Swagger
+@ApiTags('users') 
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
@@ -17,7 +16,6 @@ export class UsersController {
   @ApiResponse({
     status: 200,
     description: 'Top users retrieved successfully.',
-    type: [UserDto],
     content: {
       'application/json': {
         example: [
